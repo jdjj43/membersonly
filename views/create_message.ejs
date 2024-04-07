@@ -1,0 +1,23 @@
+<%- include('header') %>
+  <main>
+    <div class="form-container">
+      <form method="post" class="message-form">
+        <legend class="title"> 
+          <%= title %>
+        </legend>
+        <div class="message-container">
+          <label for="title">Message Title: </label>
+          <input type="text" name="title" id="title" placeholder="Message Title">
+        </div>
+        <div class="message-container">
+          <label for="description">Message: </label>
+          <textarea name="description" id="description" cols="40" rows="10" placeholder="Message" maxlength="1500"></textarea>
+        </div>
+        <div class="button-container">
+          <button type="submit" class="button message-btn">Post Message</button>
+        </div>
+      </form>
+    </div>
+  </main>
+<%- include('footer') %>
+  

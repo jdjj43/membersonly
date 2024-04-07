@@ -1,0 +1,14 @@
+<%- include('header') %>
+  <main>
+    <h1 class="title"><%= title %></h1>
+    <div class="delete-container">
+      <form method="post">
+        <h1 class="delete-title">Are you sure you want to delete "<%= message.title %>"?</h1>
+        <input type="hidden" name="id" value="<%= message._id %>">
+        <div class="button-container">
+          <button type="submit" class="delete">Delete</button>
+        </div>
+      </form>
+    </div>
+  </main>
+<%- include('footer') %>

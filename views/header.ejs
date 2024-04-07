@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+  </head>
+  <body>
+    <div class="container">
+        <div class="nav-menu">
+          <div class="icon-container">
+            <a href="/"><h1>Members Only</h1></a>
+          </div>
+          <hr>
+          <div class="links">
+            <button class="menu-btn" id="menu-btn">Show Menu</button>
+            <div class="links menu" id="menu">
+              <a href="/" id="home">Home</a>
+
+              <% if(is_logged){ %>
+                <a href="/create-message" id="create">Create New Message</a>
+              <% } %>
+  
+              <% if(!is_member && is_logged) { %>
+                <a href="/get-membership" id="membership">Join the club!</a>
+              <% } %>
+  
+              <% if(!is_admin && is_logged) { %>
+                <a href="/get-admin" id="admin">Are you an admin?</a>
+              <% } %>
+  
+              <% if(!is_logged){ %>
+                <a href="/login">Login</a>
+                <a href="/signup">Don't have an account? Signup!</a>
+              <% } %>
+  
+              <% if(is_logged){ %>
+                <a href="/logout">Logout</a>
+              <% } %>
+            </div>
+          </div>
+          
+        </div>
+      <div class="content">
+        

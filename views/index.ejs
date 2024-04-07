@@ -1,0 +1,22 @@
+<%- include('header') %>
+  <main>
+    <h1 class="title"><%= title %></h1>
+    
+    <% messages.forEach(message => { %>
+      <div class="message-card">
+        <h2><%= message.title %></h2>
+        <% if(is_member) { %>
+          <div class="stamp">
+            <h3><%= message.user.full_name %> <span class="time-stamp">- <%= message.time_stamp_formatted %></span></h3>
+          </div>
+        <% } %>
+        <p><%= message.description %></p>
+        <% if(is_admin) { %>
+          <div class="delete-btn">
+            <a href="<%= message.url %>/delete" class="delete">Delete</a>
+          </div>
+        <% } %>
+      </div>
+    <% }); %>
+  </main>
+<%- include('footer') %>

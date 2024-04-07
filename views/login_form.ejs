@@ -1,0 +1,23 @@
+<%- include('header2') %>
+  <main>
+    <h2><%= message %></h2>
+    <div class="form-container">
+      <form method="post" class="form">
+        <legend>Login</legend>
+        <div class="input-container">
+          <label for="email">Email Adress: </label>
+          <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="input-container">
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <a href="/signup" class="signup-link">Don't have an account? Signup!</a>
+        <div class="button-container">
+          <button type="submit" class="button">Login</button>
+        </div>
+      </form>
+    </div>
+  </main>
+<%- include('footer') %>
+  

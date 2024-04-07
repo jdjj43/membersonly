@@ -1,0 +1,11 @@
+<%- include('header') %>
+  <main>
+  <form method="POST" class="form secret">
+    <h2><%= secret_code_message %></h2>
+    <input type="password" name="secret" id="secret" placeholder="Secret Code">
+    <div class="button-container">
+      <button type="submit" class="button">Send</button>
+    </div>
+  </form>
+</main>
+<%- include('footer') %>

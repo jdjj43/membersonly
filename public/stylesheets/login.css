@@ -1,0 +1,100 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #3b5998;
+  padding: 2rem 3rem 2rem 3rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  margin-top: 12rem;
+}
+
+@media (min-width: 850px) {
+    .form{
+      width: 50%;
+    }
+}
+
+@media (min-width: 1250px) {
+  .form {
+    width: 33%;
+  }
+}
+
+legend {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form input{
+  border: none;
+  padding: 1rem 0 1rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.double-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.double-input .input-container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .double-input {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .double-input .input-container {
+    width: 48%;
+  }
+}
+
+
+
+.input-container label {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.button {
+  margin: 2rem 0;
+}
+
+@media (min-width: 900px) {
+  .button {
+    width: 12rem;
+  }
+}
+
+.container2 {
+  position: relative;
+}
+
+.title-bar {
+  background-color: #3b5998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.title-bar h1 {
+  margin: 2rem;
+}

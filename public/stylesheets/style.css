@@ -1,0 +1,267 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f6f7fb;
+}
+
+.container {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .container { 
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.nav-menu {
+  background-color: #3b5998; /* Color de fondo similar al de Facebook */
+  padding: 0.7rem;
+  color: #fff; /* Color de texto */
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+    .nav-menu {
+      padding: 0 2rem;
+      width: 29.5rem; /* Ancho del menú */
+      position: fixed; /* Establecer la posición fija */
+      top: 0; /* Fijar en la parte superior de la ventana */
+      left: 0; /* Fijar en el lado izquierdo de la ventana */
+      height: 100%; /* Ocupar toda la altura de la ventana */
+    }
+}
+
+.icon-container {
+  font-size: 20px;
+}
+
+.icon-container a, .links a, .menu-btn{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.links{
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.menu {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .links{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  #menu {
+    display: flex;
+  }
+}
+
+.links a, .menu-btn{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu-btn {
+  background-color: #1a3266;
+  padding: 1.5rem;
+  border: none;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.links a {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .links a{
+    padding: 1rem 0 1rem 2rem;
+    width: 25rem;
+    border-radius: 2rem;
+    text-align: left;
+  }
+}
+
+.links a:hover, .hover, .menu-btn:hover{
+  background-color: #2d4474;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-left: 29rem; /* Dar espacio al contenido principal para evitar que se superponga con el menú */
+    padding: 4rem;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+}
+
+.title {
+  font-size: 3rem;
+  color: #2d4474;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.message-card {
+  padding: 0 2rem;
+  border: 1px solid #3b5998;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin: 2rem 0;
+  background-color: #FFF;
+  height: 100%;
+}
+
+.button {
+  padding: 1rem 0;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .button-container {
+    display: flex;
+    justify-content: end;
+  }
+  .button {
+    width: 20%;
+  }
+}
+
+.delete-btn {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete {
+  border: none;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .delete-btn {
+    align-items: end;
+  }
+  .delete {
+    width: 12rem;
+  }
+}
+
+.message-card h2 {
+  font-size: 2.3rem;
+}
+
+.message-card p {
+  font-size: 1.6rem;
+}
+
+.stamp {
+  margin-bottom: 3rem;
+}
+
+.time-stamp {
+  color: #a7a7a7;
+}
+
+
+.message-form {
+  padding: 0 2rem;
+}
+
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.message-container input {
+  border: none;
+  padding: 1rem 0 1rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #3b5998;
+}
+
+.message-container textarea {
+  resize: none;
+  border: none;
+  border: 1px solid #3b5998;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.message-container label {
+  font-size: 1.5rem;
+}
+
+.message-btn {
+  background-color: #3b5998;
+  color: white;
+
+}
+
+.delete-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #3b5998
+}
+
+.delete-title {
+  margin: 4rem 0;
+  font-size: 2.3rem;
+}
+
+
+.secret h2{
+  color: white;
+}
